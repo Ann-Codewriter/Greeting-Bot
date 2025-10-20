@@ -18,3 +18,9 @@ console.log("Allow me to introduce myself.");
 let botIntroduction = "My name is " + bot + ".";
 console.log(botIntroduction);
 
+let botLocationSentence = "I live in " + botLocation + '.';
+console.log(botLocationSentence);
+
+//Setp 6 - Reassignment of variable name
+bot = "professorBot";
+
