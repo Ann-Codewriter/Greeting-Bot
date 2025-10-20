@@ -15,3 +15,5 @@ console.log(codingFact);
 //Reassignment of variable
 codingfact = favoriteLanguage + " " + "was introduced in 1995 by brendan Eich.";
 console.log(codingFact);
+
+console.log("It was fun sharing these facts with you. Goodbye! " + botName + " from " + botLocation + ".");
