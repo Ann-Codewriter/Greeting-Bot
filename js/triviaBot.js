@@ -12,3 +12,6 @@ console.log("My favorite programming language is " + favoriteLanguage + ".");
 let codingFact = favoriteLanguage + " makes webpages alive.";
 console.log(codingFact);
 
+//Reassignment of variable
+codingfact = favoriteLanguage + " " + "was introduced in 1995 by brendan Eich.";
+console.log(codingFact);
