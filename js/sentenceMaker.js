@@ -27,4 +27,4 @@ let secondStory = "Once upon a time, " + "there was a " + adjective
 + " lived in a " + place + " and had " + adjective2 + 
 " nostrils that blew fire when it was " + verb + ".";
 
-console.log ("Second story:" + secondStory);
+console.log ("Second story: " + secondStory);
