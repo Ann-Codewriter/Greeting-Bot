@@ -34,3 +34,9 @@ bot = "awesomeTeacherBot";
 //Step 9 - Check the bot's new nickname
 let newNicknameGreeting = "I love my nickname but I wish people would call me " + bot + '.';
 console.log(newNicknameGreeting);
+
+//Step 10 - Bot's favorite subject
+let favoriteSubject = "Computer Science";
+let favoriteSubjectSentence = "My favorite subject is " + favoriteSubject + '.';
+console.log(favoriteSubjectSentence);
+
