@@ -24,3 +24,13 @@ console.log(botLocationSentence);
 //Setp 6 - Reassignment of variable name
 bot = "professorBot";
 
+//Step 7 - Check the new bot value
+let nicknameIntroduction = "My nickname is " + bot + '.';
+console.log(nicknameIntroduction);
+
+//Step 8 - Reassign a new variable name
+bot = "awesomeTeacherBot";
+
+//Step 9 - Check the bot's new nickname
+let newNicknameGreeting = "I love my nickname but I wish people would call me " + bot + '.';
+console.log(newNicknameGreeting);
