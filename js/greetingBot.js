@@ -11,3 +11,10 @@ let bot;
 bot = "teacherBot";
 let botLocation = "the universe";
 
+//Step 4 - Add a new statement
+console.log("Allow me to introduce myself.");
+
+//Step 5 - String Concatenation
+let botIntroduction = "My name is " + bot + ".";
+console.log(botIntroduction);
+
