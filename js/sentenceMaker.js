@@ -12,3 +12,12 @@ let firstStory = "Once upon a time, " + "there was a "
 adjective2 + " nostrils that blew fire when it was " + verb + ".";
 
 console.log("First story: " + firstStory);
+
+//Reassign variables and create second sentence
+
+adjective = "brown";
+noun = "fox";
+verb = "hunting";
+place = "in the forest";
+adjective2 = "big";
+noun2 = "grasscutters";
