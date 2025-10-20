@@ -1,5 +1,11 @@
-//Step 1
+/*Use variables, data types and simple arithmetic operators to build a greeting bot */
 
-console.log("hi, there!");
+//Step 1 - Add a message
 
-//Step 2
+console.log("Hi, there!");
+
+//Step 2 - Add another statement
+
+console.log("I am excited to talk to you.");
+
+
