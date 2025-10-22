@@ -34,3 +34,12 @@ console.log(`Here is an example of accessing the last letter in the word ${subje
 let lastCharacter = "t";
 console.log(lastCharacter);
 
+//Find the index position of a substring
+let learningIsFunSentence = "Learning is fun.";
+console.log("Here are examples of finding the positions of substrings in the sentence.");
+console.log(learningIsFunSentence.indexOf("Learning"));
+
+console.log(learningIsFunSentence.indexOf("fun"));
+console.log(learningIsFunSentence.indexOf("learning"));
+
+console.log("I hope you enjoyed learning today.");
