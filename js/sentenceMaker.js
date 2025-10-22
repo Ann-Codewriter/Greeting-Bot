@@ -28,3 +28,7 @@ let secondStory = "Once upon a time, " + "there was a " + adjective
 " nostrils that blew fire when it was " + verb + ".";
 
 console.log ("Second story: " + secondStory);
+
+let number = 15;
+console.log(typeof number);
+
