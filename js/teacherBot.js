@@ -19,9 +19,18 @@ console.log(strlengthIntro);
 console.log(subject.length);
 
 //Find length of the topic string
-
 console.log(`Here is an example of using the length property on the word ${topic}.`);
 console.log(topic.length);
 
 //Access characters from a string
 console.log(subject[0]);
+
+//Access the second character from the subject variable
+console.log(`Here is an example of accessing the second letter in the word ${subject}`);
+console.log(subject[1]);
+
+//Access the last character
+console.log(`Here is an example of accessing the last letter in the word ${subject}.`);
+let lastCharacter = "t";
+console.log(lastCharacter);
+
