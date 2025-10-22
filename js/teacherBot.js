@@ -22,3 +22,6 @@ console.log(subject.length);
 
 console.log(`Here is an example of using the length property on the word ${topic}.`);
 console.log(topic.length);
+
+//Access characters from a string
+console.log(subject[0]);
