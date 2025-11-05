@@ -1,6 +1,6 @@
 //Boolean check function
 
-function booWho(x){
+function dataType(x){
   if (x === true){
     return true
   } 
@@ -11,3 +11,15 @@ function booWho(x){
     return false
   }
 }
+
+console.log(dataType(true));
+console.log(dataType(false));
+console.log(dataType([1, 2, 3]));
+console.log(dataType([].slice));
+console.log(dataType({ "a": 1 }));
+console.log(dataType(1));
+console.log(dataType(NaN));
+console.log(dataType("a"));
+console.log(dataType("true"));
+console.log(dataType("false"));
+
