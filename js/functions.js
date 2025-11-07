@@ -26,10 +26,25 @@
 
 //The Coffee Shop
 
-function totalCost(unitPrice, numberOfCupsSold){
+function totalCost(unitPrice, numberOfCupsSold){ // 1. Total Cost of cups sold
   return unitPrice * numberOfCupsSold
 }
 
+console.log(totalCost(11, 180));
+
+
+function applyDiscount (unitPrice, numberOfCupsSold, discount){
+  let totalCost = unitPrice * numberOfCupsSold;
+  let discountApplied = totalCost * (discount/100);
+  if (numberOfCupsSold > 10){
+    return totalCost - discountApplied
+  } 
+  else {
+    return totalCost
+  }
+}
 
 console.log(totalCost(11, 180));
+console.log(applyDiscount(11, 180, 15/100));
+
 
