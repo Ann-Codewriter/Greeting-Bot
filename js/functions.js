@@ -33,7 +33,7 @@ function totalCost(unitPrice, numberOfCupsSold){ // 1. Total Cost of cups sold
 console.log(totalCost(11, 180));
 
 
-function applyDiscount (unitPrice, numberOfCupsSold, discount){
+function applyDiscount (unitPrice, numberOfCupsSold, discount){ // Apply Discount
   let totalCost = unitPrice * numberOfCupsSold;
   let discountApplied = totalCost * (discount/100);
   if (numberOfCupsSold > 10){
@@ -46,5 +46,15 @@ function applyDiscount (unitPrice, numberOfCupsSold, discount){
 
 console.log(totalCost(11, 180));
 console.log(applyDiscount(11, 180, 15/100));
+
+
+function conversion(unitPrice, numberOfCupsSold){
+  let totalCost = unitPrice * numberOfCupsSold;
+  const exchangeRate = 11.50;
+  return totalCost * exchangeRate
+}
+
+console.log(conversion(11, 180));
+
 
 
