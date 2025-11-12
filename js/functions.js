@@ -26,35 +26,44 @@
 
 //The Coffee Shop
 
-function totalCost(unitPrice, numberOfCupsSold){ // Total Cost of cups sold
-  return unitPrice * numberOfCupsSold
+function totalCost(unitPrice, numberOfCupsSold) {
+  return unitPrice * numberOfCupsSold;
 }
 
-console.log(totalCost(11, 180));
+function applyDiscount(unitPrice, numberOfCupsSold, discount) {
+  const cost = totalCost(unitPrice, numberOfCupsSold);
+  const discountApplied = cost * (discount / 100);
 
-
-function applyDiscount (unitPrice, numberOfCupsSold, discount){ // Apply Discount
-  let totalCost = unitPrice * numberOfCupsSold;
-  let discountApplied = totalCost * (discount/100);
-  if (numberOfCupsSold > 10){
-    return totalCost - discountApplied
+  if (numberOfCupsSold > 10) {
+    return cost - discountApplied;
   } 
   else {
-    return totalCost
+    return cost;
   }
 }
 
-console.log(totalCost(11, 180));
-console.log(applyDiscount(11, 180, 15/100));
-
-
-function conversion(unitPrice, numberOfCupsSold){ //USD to Cedis Conversion
-  let totalCost = unitPrice * numberOfCupsSold;
-  const exchangeRate = 11.50;
-  return totalCost * exchangeRate
+function currencyConversion(amount, exchangeRate) {
+  return amount * exchangeRate;
 }
 
-console.log(conversion(11, 180));
+function finalPrice(unitPrice, numberOfCupsSold, discount, exchangeRate) {
+  const discountedPrice = applyDiscount(unitPrice, numberOfCupsSold, discount);
+  const convertedPrice = currencyConversion(discountedPrice, exchangeRate);
+
+  return convertedPrice;
+}
+
+const unitPrice = 11;
+const numberOfCupsSold = 180;
+const discount = 15;
+const exchangeRate = 11.50;
+
+console.log("Total Cost:", totalCost(unitPrice, numberOfCupsSold));
+console.log("Final Price:", finalPrice(unitPrice, numberOfCupsSold, discount, exchangeRate));
+
+
+//Warehouse Inventory
+
 
 
 
