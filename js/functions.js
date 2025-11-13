@@ -65,7 +65,8 @@
 //Warehouse Inventory
 
 function additionalQuantity(existingQuantity, newStockQuantity){
-  return existingQuantity + newStockQuantity
+  const totalStock = existingQuantity + newStockQuantity;
+  return totalStock;
 }
 
 function removeStock (existingQuantity, itemsSold){
@@ -73,9 +74,28 @@ function removeStock (existingQuantity, itemsSold){
     return existingQuantity;
   }
   else {
-    return existingQuantity - itemsSold;
+    return remainingQuantity;
   }
 }
+
+function finalInventory (existingQuantity, newStockQuantity, itemsSold){
+  const updatedInventory = existingQuantity + newStockQuantity - itemsSold;
+
+  return updatedInventory;
+
+}
+
+const existingQuantity = 83;
+const newStockQuantity = 135;
+const itemsSold = 69;
+const remainingQuantity = existingQuantity - itemsSold;
+
+console.log(additionalQuantity(existingQuantity, newStockQuantity));
+console.log(`${itemsSold} items have been sold, ${remainingQuantity} is left.`);
+console.log(removeStock (existingQuantity, itemsSold));
+console.log(finalInventory(existingQuantity, newStockQuantity, itemsSold));
+
+
 
 
 
