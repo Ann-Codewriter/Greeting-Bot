@@ -1,0 +1,22 @@
+//Building a JavaScript Trivia Bot
+
+console.log("Hello! I'm your coding fun fact guide!");
+
+let botName = "Trivia";
+let botLocation = "Amsterdam";
+let favoriteLanguage = "JavaScript";
+console.log("My name is " + botName + " " + "and I live in " + botLocation + ".");
+
+console.log("My favorite programming language is " + favoriteLanguage + ".");
+
+let codingFact = favoriteLanguage + " makes webpages alive.";
+console.log(codingFact);
+
+codingFact = favoriteLanguage + " " + "was introduced in 1995 by brendan Eich."; //Reassignment of variable
+console.log(codingFact);
+
+codingFact = favoriteLanguage + " reacts to user actions.";
+console.log(codingFact);
+
+
+console.log("It was fun sharing these facts with you. Goodbye! " + botName + " from " + botLocation + ".");
