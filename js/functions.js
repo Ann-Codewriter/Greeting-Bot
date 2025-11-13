@@ -64,8 +64,17 @@
 
 //Warehouse Inventory
 
-function addStock(existingQuantity, newStockQuantity){
+function additionalQuantity(existingQuantity, newStockQuantity){
   return existingQuantity + newStockQuantity
+}
+
+function removeStock (existingQuantity, itemsSold){
+  if (itemsSold > existingQuantity){
+    return existingQuantity;
+  }
+  else {
+    return existingQuantity - itemsSold;
+  }
 }
 
 
