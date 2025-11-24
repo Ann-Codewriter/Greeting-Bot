@@ -66,36 +66,39 @@
 
 function addStock(existingQuantity, newStock){
   const totalStock = existingQuantity + newStock;
+  
   return totalStock;
 }
 
-
 function removeStock (existingQuantity, itemsSold){
   if (itemsSold > existingQuantity){
-    return existingQuantity;
+
+    console.log("Error: Not enough items in stock");
+  
+    return existingQuantity - itemsSold;
   }
-  else {
+    else {
     return remainingQuantity;
   }
 }
 
-
-function finalInventory (existingQuantity, newStockQuantity, itemsSold){
-  const updatedInventory = existingQuantity + newStockQuantity - itemsSold;
-
-  return updatedInventory;
-
+function checkRestock(quantity, level = 10) {
+  if (quantity < level) {
+    console.log("⚠️ Restock needed!");
+  } else {
+    console.log("Stock level is sufficient.");
+  }
 }
 
-const existingQuantity = 83;
-const newStockQuantity = 135;
-const itemsSold = 69;
-const remainingQuantity = existingQuantity - itemsSold;
+let inventory = 31;
+inventory = addStock(inventory, 21);
+inventory = removeStock(inventory, 26);
+inventory = removeStock(inventory, 25);
 
-console.log(additionalQuantity(existingQuantity, newStockQuantity));
-console.log(`${itemsSold} items have been sold, ${remainingQuantity} is left.`);
-console.log(removeStock (existingQuantity, itemsSold));
-console.log(finalInventory(existingQuantity, newStockQuantity, itemsSold));
+console.log("Final Inventory Count:", inventory);
+console.log(checkRestock(inventory));
+
+
 
 
 
