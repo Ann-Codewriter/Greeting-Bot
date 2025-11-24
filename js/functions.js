@@ -1,4 +1,4 @@
-Boolean check function
+//Boolean check function
 
 function dataType(x){
   if (x === true){
@@ -12,16 +12,16 @@ function dataType(x){
   }
 }
 
-console.log(dataType(true));
-console.log(dataType(false));
-console.log(dataType([1, 2, 3]));
-console.log(dataType([].slice));
-console.log(dataType({ "a": 1 }));
-console.log(dataType(1));
-console.log(dataType(NaN));
-console.log(dataType("a"));
-console.log(dataType("true"));
-console.log(dataType("false"));
+// console.log(dataType(true));
+// console.log(dataType(false));
+// console.log(dataType([1, 2, 3]));
+// console.log(dataType([].slice));
+// console.log(dataType({ "a": 1 }));
+// console.log(dataType(1));
+// console.log(dataType(NaN));
+// console.log(dataType("a"));
+// console.log(dataType("true"));
+// console.log(dataType("false"));
 
 
 //The Coffee Shop
@@ -58,8 +58,8 @@ const numberOfCupsSold = 180;
 const discount = 15;
 const exchangeRate = 11.50;
 
-console.log("Total Cost:", totalCost(unitPrice, numberOfCupsSold));
-console.log("Final Price:", finalPrice(unitPrice, numberOfCupsSold, discount, exchangeRate));
+// console.log("Total Cost:", totalCost(unitPrice, numberOfCupsSold));
+// console.log("Final Price:", finalPrice(unitPrice, numberOfCupsSold, discount, exchangeRate));
 
 
 //Warehouse Inventory
@@ -98,8 +98,6 @@ inventory = removeStock(inventory, 25);
 console.log("Final Inventory Count:", inventory);
 console.log(checkRestock(inventory));
 
-
-//Student Grades Evaluator
 
 
 
