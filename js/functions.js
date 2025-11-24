@@ -64,10 +64,11 @@
 
 //Warehouse Inventory
 
-function additionalQuantity(existingQuantity, newStockQuantity){
-  const totalStock = existingQuantity + newStockQuantity;
+function addStock(existingQuantity, newStock){
+  const totalStock = existingQuantity + newStock;
   return totalStock;
 }
+
 
 function removeStock (existingQuantity, itemsSold){
   if (itemsSold > existingQuantity){
@@ -77,6 +78,7 @@ function removeStock (existingQuantity, itemsSold){
     return remainingQuantity;
   }
 }
+
 
 function finalInventory (existingQuantity, newStockQuantity, itemsSold){
   const updatedInventory = existingQuantity + newStockQuantity - itemsSold;
