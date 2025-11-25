@@ -73,7 +73,7 @@ function addStock(existingQuantity, newStock){
 function removeStock (existingQuantity, itemsSold){
   if (itemsSold > existingQuantity){
 
-    console.log("Error: Not enough items in stock");
+    // console.log("Error: Not enough items in stock");
   
     return existingQuantity - itemsSold;
   }
@@ -95,10 +95,17 @@ inventory = addStock(inventory, 21);
 inventory = removeStock(inventory, 26);
 inventory = removeStock(inventory, 25);
 
-console.log("Final Inventory Count:", inventory);
-console.log(checkRestock(inventory));
+// console.log("Final Inventory Count:", inventory);
+// console.log(checkRestock(inventory));
 
 
+// Student Grades Evaluator
+
+//To find the average score of 3 subject marks, first add the marks and divide by 3.
+
+function averageScore(subject1, subject2, subject3){
+  return (subject1, subject2, subject3) / 3;
+}
 
 
 
