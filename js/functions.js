@@ -103,9 +103,31 @@ inventory = removeStock(inventory, 25);
 
 //To find the average score of 3 subject marks, first add the marks and divide by 3.
 
-function averageScore(subject1, subject2, subject3){
-  return (subject1, subject2, subject3) / 3;
+function averageScore(science, maths, english){
+  return (science + maths + english) / 3;
 }
+
+//To assign a grade based on the average score, a new function named assignGrade will be called.
+function assignGrade(average){
+  //Use if, else if and else statements
+  if(average >= 80) {
+    return "Grade A";
+  }
+  else if (average >= 70){
+    return "Grade B";
+  }
+  else if (average >= 60){
+    return "Grade C";
+  }
+  else if (average >= 50){
+    return "Grace D";
+  }
+  else {
+    return "Grade F";
+  }
+}
+
+//
 
 
 
