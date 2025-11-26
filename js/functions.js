@@ -127,7 +127,15 @@ function assignGrade(average){
   }
 }
 
-//
+//To check whether the student has passed or failed, call another function named checkStatus.
+function checkStatus(average){
+  if (average >= 60){
+    return "Passed";
+  }
+  else {
+    return "Failed";
+  }
+}
 
 
 
