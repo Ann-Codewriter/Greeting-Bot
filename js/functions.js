@@ -26,104 +26,104 @@ function dataType(x){
 
 //The Coffee Shop
 
-function totalCost(unitPrice, numberOfCupsSold) {
-  return unitPrice * numberOfCupsSold;
-}
+// function totalCost(unitPrice, numberOfCupsSold) {
+//   return unitPrice * numberOfCupsSold;
+// }
 
-function applyDiscount(unitPrice, numberOfCupsSold, discount) {
-  const cost = totalCost(unitPrice, numberOfCupsSold);
-  const discountApplied = cost * (discount / 100);
+// function applyDiscount(unitPrice, numberOfCupsSold, discount) {
+//   const cost = totalCost(unitPrice, numberOfCupsSold);
+//   const discountApplied = cost * (discount / 100);
 
-  if (numberOfCupsSold > 10) {
-    return cost - discountApplied;
-  } 
-  else {
-    return cost;
-  }
-}
+//   if (numberOfCupsSold > 10) {
+//     return cost - discountApplied;
+//   } 
+//   else {
+//     return cost;
+//   }
+// }
 
-function currencyConversion(amount, exchangeRate) {
-  return amount * exchangeRate;
-}
+// function currencyConversion(amount, exchangeRate) {
+//   return amount * exchangeRate;
+// }
 
-function finalPrice(unitPrice, numberOfCupsSold, discount, exchangeRate) {
-  const discountedPrice = applyDiscount(unitPrice, numberOfCupsSold, discount);
-  const convertedPrice = currencyConversion(discountedPrice, exchangeRate);
+// function finalPrice(unitPrice, numberOfCupsSold, discount, exchangeRate) {
+//   const discountedPrice = applyDiscount(unitPrice, numberOfCupsSold, discount);
+//   const convertedPrice = currencyConversion(discountedPrice, exchangeRate);
 
-  return convertedPrice;
-}
+//   return convertedPrice;
+// }
 
-const unitPrice = 11;
-const numberOfCupsSold = 180;
-const discount = 15;
-const exchangeRate = 11.50;
+// const unitPrice = 11;
+// const numberOfCupsSold = 180;
+// const discount = 15;
+// const exchangeRate = 11.50;
 
-// console.log("Total Cost:", totalCost(unitPrice, numberOfCupsSold));
-// console.log("Final Price:", finalPrice(unitPrice, numberOfCupsSold, discount, exchangeRate));
+// // console.log("Total Cost:", totalCost(unitPrice, numberOfCupsSold));
+// // console.log("Final Price:", finalPrice(unitPrice, numberOfCupsSold, discount, exchangeRate));
 
 
-//Warehouse Inventory
+// //Warehouse Inventory
 
-function addStock(existingQuantity, newStock){
-  const totalStock = existingQuantity + newStock;
+// function addStock(existingQuantity, newStock){
+//   const totalStock = existingQuantity + newStock;
   
-  return totalStock;
-}
+//   return totalStock;
+// }
 
-function removeStock (existingQuantity, itemsSold){
-  if (itemsSold > existingQuantity){
+// function removeStock (existingQuantity, itemsSold){
+//   if (itemsSold > existingQuantity){
 
-    // console.log("Error: Not enough items in stock");
+//     // console.log("Error: Not enough items in stock");
   
-    return existingQuantity - itemsSold;
-  }
-    else {
-    return remainingQuantity;
-  }
-}
+//     return existingQuantity - itemsSold;
+//   }
+//     else {
+//     return remainingQuantity;
+//   }
+// }
 
-function checkRestock(quantity, level = 10) {
-  if (quantity < level) {
-    console.log("⚠️ Restock needed!");
-  } else {
-    console.log("Stock level is sufficient.");
-  }
-}
+// function checkRestock(quantity, level = 10) {
+//   if (quantity < level) {
+//     // console.log("⚠️ Restock needed!");
+//   } else {
+//     // console.log("Stock level is sufficient.");
+//   }
+// }
 
-let inventory = 31;
-inventory = addStock(inventory, 21);
-inventory = removeStock(inventory, 26);
-inventory = removeStock(inventory, 25);
+// let inventory = 31;
+// inventory = addStock(inventory, 21);
+// inventory = removeStock(inventory, 26);
+// inventory = removeStock(inventory, 25);
 
 // console.log("Final Inventory Count:", inventory);
 // console.log(checkRestock(inventory));
 
 
+
 // Student Grades Evaluator
 
 //To find the average score of 3 subject marks, first add the marks and divide by 3.
-
-function averageScore(science, maths, english){
-  return (science + maths + english) / 3;
+function averageScore(mark1, mark2, mark3){
+  return (mark1 + mark2 + mark3) / 3;
 }
 
 //To assign a grade based on the average score, a new function named assignGrade will be called.
 function assignGrade(average){
   //Use if, else if and else statements
   if(average >= 80) {
-    return "Grade A";
+    return "A";
   }
   else if (average >= 70){
-    return "Grade B";
+    return "B";
   }
   else if (average >= 60){
-    return "Grade C";
+    return "C";
   }
   else if (average >= 50){
-    return "Grace D";
+    return "D";
   }
   else {
-    return "Grade F";
+    return "F";
   }
 }
 
@@ -137,6 +137,22 @@ function checkStatus(average){
   }
 }
 
+//To test three students with the functions, a new function named studentTest
+function studentTest(name, mark1, mark2, mark3){
+
+  const avg = averageScore(mark1, mark2, mark3);
+  const grade = assignGrade(avg);
+  const passed = checkStatus(grade);
+
+  console.log(`Student: ${name}`);
+  console.log(`Average Score: ${avg.toFixed(2)}`);
+  console.log(`Grade: ${grade}`);
+
+}
+
+console.log(studentTest("Ama", 67, 81, 72));
+console.log(studentTest("Kofi", 69, 64, 80));
+console.log(studentTest("Yeboah", 96, 90, 76));
 
 
 
