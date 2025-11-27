@@ -18,3 +18,25 @@ function averageScore(student){
 students.forEach(student => {
     console.log(student.name + "'s average is:", averageScore(student).toFixed(2));
 });
+
+
+//Invoke another function that assigns grades to the students based on their average score.
+//Use if, else if and else statements.
+function assignGrade(averageScore){
+    if (averageScore >= 80){
+        return "Grade A";
+    } 
+    else if (averageScore >= 70){
+        return "Grade B";
+    } 
+    else if (averageScore >= 60){
+        return "Grade C";
+    } 
+    else if (averageScore >= 50){
+        return "Grade D";
+    } 
+    else {
+        return "Grade F";
+    }
+}
+
