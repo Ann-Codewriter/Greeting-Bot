@@ -40,3 +40,18 @@ function assignGrade(averageScore){
     }
 }
 
+console.log(assignGrade(averageScore));
+
+//To check if student passed or failed, call another function.
+function passFail(averageScore){
+    if (averageScore <= 60){
+        return "Passed";
+    }
+    else {
+        return "failed";
+    }
+}
+
+console.log(passFail(averageScore));
+
+//
