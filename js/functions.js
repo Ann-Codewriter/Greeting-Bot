@@ -26,81 +26,74 @@ function dataType(x){
 
 //The Coffee Shop
 
-function totalCost(unitPrice, numberOfCupsSold) {
-  return unitPrice * numberOfCupsSold;
-}
+// function totalCost(unitPrice, numberOfCupsSold) {
+//   return unitPrice * numberOfCupsSold;
+// }
 
-function applyDiscount(unitPrice, numberOfCupsSold, discount) {
-  const cost = totalCost(unitPrice, numberOfCupsSold);
-  const discountApplied = cost * (discount / 100);
+// function applyDiscount(unitPrice, numberOfCupsSold, discount) {
+//   const cost = totalCost(unitPrice, numberOfCupsSold);
+//   const discountApplied = cost * (discount / 100);
 
-  if (numberOfCupsSold > 10) {
-    return cost - discountApplied;
-  } 
-  else {
-    return cost;
-  }
-}
+//   if (numberOfCupsSold > 10) {
+//     return cost - discountApplied;
+//   } 
+//   else {
+//     return cost;
+//   }
+// }
 
-function currencyConversion(amount, exchangeRate) {
-  return amount * exchangeRate;
-}
+// function currencyConversion(amount, exchangeRate) {
+//   return amount * exchangeRate;
+// }
 
-function finalPrice(unitPrice, numberOfCupsSold, discount, exchangeRate) {
-  const discountedPrice = applyDiscount(unitPrice, numberOfCupsSold, discount);
-  const convertedPrice = currencyConversion(discountedPrice, exchangeRate);
+// function finalPrice(unitPrice, numberOfCupsSold, discount, exchangeRate) {
+//   const discountedPrice = applyDiscount(unitPrice, numberOfCupsSold, discount);
+//   const convertedPrice = currencyConversion(discountedPrice, exchangeRate);
 
-  return convertedPrice;
-}
+//   return convertedPrice;
+// }
 
-const unitPrice = 11;
-const numberOfCupsSold = 180;
-const discount = 15;
-const exchangeRate = 11.50;
+// const unitPrice = 11;
+// const numberOfCupsSold = 180;
+// const discount = 15;
+// const exchangeRate = 11.50;
 
-// console.log("Total Cost:", totalCost(unitPrice, numberOfCupsSold));
-// console.log("Final Price:", finalPrice(unitPrice, numberOfCupsSold, discount, exchangeRate));
+// // console.log("Total Cost:", totalCost(unitPrice, numberOfCupsSold));
+// // console.log("Final Price:", finalPrice(unitPrice, numberOfCupsSold, discount, exchangeRate));
 
 
-//Warehouse Inventory
+// //Warehouse Inventory
 
-function addStock(existingQuantity, newStock){
-  const totalStock = existingQuantity + newStock;
+// function addStock(existingQuantity, newStock){
+//   const totalStock = existingQuantity + newStock;
   
-  return totalStock;
-}
+//   return totalStock;
+// }
 
-function removeStock (existingQuantity, itemsSold){
-  if (itemsSold > existingQuantity){
+// function removeStock (existingQuantity, itemsSold){
+//   if (itemsSold > existingQuantity){
 
-    console.log("Error: Not enough items in stock");
+//     // console.log("Error: Not enough items in stock");
   
-    return existingQuantity - itemsSold;
-  }
-    else {
-    return remainingQuantity;
-  }
-}
+//     return existingQuantity - itemsSold;
+//   }
+//     else {
+//     return remainingQuantity;
+//   }
+// }
 
-function checkRestock(quantity, level = 10) {
-  if (quantity < level) {
-    console.log("⚠️ Restock needed!");
-  } else {
-    console.log("Stock level is sufficient.");
-  }
-}
+// function checkRestock(quantity, level = 10) {
+//   if (quantity < level) {
+//     // console.log("⚠️ Restock needed!");
+//   } else {
+//     // console.log("Stock level is sufficient.");
+//   }
+// }
 
-let inventory = 31;
-inventory = addStock(inventory, 21);
-inventory = removeStock(inventory, 26);
-inventory = removeStock(inventory, 25);
+// let inventory = 31;
+// inventory = addStock(inventory, 21);
+// inventory = removeStock(inventory, 26);
+// inventory = removeStock(inventory, 25);
 
-console.log("Final Inventory Count:", inventory);
-console.log(checkRestock(inventory));
-
-
-
-
-
-
-
+// console.log("Final Inventory Count:", inventory);
+// console.log(checkRestock(inventory));
